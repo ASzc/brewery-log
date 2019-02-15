@@ -6,6 +6,12 @@ A comprehensive log for BIAB (Brew in a Bag / Brew in a Basket) style brewing. D
 
 Printing on water-resistant paper is recommended, but not required.
 
+## Preview
+
+### BIAB
+
+<img src="preview/biab-1.svg" width="200" /> <img src="preview/biab-2.svg" width="200" /> <img src="preview/biab-3.svg" width="200" /> <img src="preview/biab-4.svg" width="200" />
+
 ## Development
 
 The source files are in "Flat ODT" XML format. LibreOffice Writer was used to create them, but in theory any ODT editor should be acceptable.
