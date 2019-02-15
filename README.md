@@ -6,6 +6,8 @@ A comprehensive log for BIAB (Brew in a Bag / Brew in a Basket) style brewing. D
 
 Printing on water-resistant paper is recommended, but not required.
 
+See the releases tab on GitHub for pre-generated PDFs.
+
 ## Preview
 
 ### BIAB
