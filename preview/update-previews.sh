@@ -8,22 +8,23 @@ render() {
     name="$1"
     pages="$2"
     echo "==> $name" >&2
+
+    # Convert to PDF
+    pdf="$name.pdf"
+    rm "$pdf"
+    libreoffice --convert-to pdf "../$name.fodt"
+    # Have to wait for async writing, libreoffice doesn't offer sync
+    # convert-to at this time.
+    while [ ! -f "$pdf" ]
+    do
+        sleep 0.5s
+    done
+
     for i in $(seq 1 "$pages")
     do
         echo " -> $i" >&2
 
-        pdf="$name.pdf"
         out="$name-$i.svg"
-
-        # Convert to PDF
-        rm "$pdf"
-        libreoffice --convert-to pdf "../$name.fodt"
-        # Have to wait for async writing, libreoffice doesn't offer sync
-        # convert-to at this time.
-        while [ ! -f "$pdf" ]
-        do
-            sleep 0.5s
-        done
 
         # Convert to SVG
         pdf2svg "$pdf" "$out" "$i"
