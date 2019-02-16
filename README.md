@@ -12,11 +12,11 @@ The log is presented in a clean, but asthetically pleasing manner. See for yours
 
 ### Cover
 
-<img src="preview/coverpage-1.svg" width="200" />
+<kbd><img src="preview/coverpage-1.svg" width="200"/></kbd>
 
 ### BIAB
 
-<img src="preview/biab-1.svg" width="200" /> <img src="preview/biab-2.svg" width="200" /> <img src="preview/biab-3.svg" width="200" /> <img src="preview/biab-4.svg" width="200" />
+<kbd><img src="preview/biab-1.svg" width="200" /></kbd><kbd><img src="preview/biab-2.svg" width="200" /></kbd><kbd><img src="preview/biab-3.svg" width="200" /></kbd><kbd><img src="preview/biab-4.svg" width="200" /></kbd>
 
 ## How to Print
 
