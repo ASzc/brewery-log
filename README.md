@@ -2,9 +2,7 @@
 
 ## Overview
 
-A comprehensive log for BIAB (Brew in a Bag / Brew in a Basket) style brewing. Designed for use in a three-ring binder. Sized for printing on US Letter paper.
-
-Printing on water-resistant paper is recommended, but not required.
+A comprehensive log for BIAB (Brew in a Bag / Brew in a Basket) style brewing.
 
 See the releases tab on GitHub for pre-generated PDFs.
 
@@ -19,6 +17,19 @@ The log is presented in a clean, but asthetically pleasing manner. See for yours
 ### BIAB
 
 <img src="preview/biab-1.svg" width="200" /> <img src="preview/biab-2.svg" width="200" /> <img src="preview/biab-3.svg" width="200" /> <img src="preview/biab-4.svg" width="200" />
+
+## How to Print
+
+<dl>
+  <dt>Paper Size</dt>
+  <dd>US Letter</dd>
+  <dt>Paper Composition</dt>
+  <dd>Water-resistant (recommended)</dd>
+  <dt>Printer Mode</dt>
+  <dd>Duplex</dd>
+  <dt>Binding</dt>
+  <dd>Three-ring binder</dd>
+</dl>
 
 ## Development
 
