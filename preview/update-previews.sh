@@ -11,8 +11,9 @@ render() {
     for i in $(seq 1 "$pages")
     do
         echo " -> $i" >&2
+
         out="$name-$i.svg"
-        tmp="$(mktemp XXXXXXXXXX.tmp.svg)"
+
         # Convert
         pdf2svg "../$name.pdf" "$out" "$i"
 
@@ -27,6 +28,7 @@ render() {
             "$out"
 
         # Clean / Minify
+        tmp="$(mktemp XXXXXXXXXX.tmp.svg)"
         svgcleaner --quiet --multipass --indent 1 "$out" "$tmp"
         mv "$tmp" "$out"
     done
