@@ -12,10 +12,21 @@ render() {
     do
         echo " -> $i" >&2
 
+        pdf="$name.pdf"
         out="$name-$i.svg"
 
-        # Convert
-        pdf2svg "../$name.pdf" "$out" "$i"
+        # Convert to PDF
+        rm "$pdf"
+        libreoffice --convert-to pdf "../$name.fodt"
+        # Have to wait for async writing, libreoffice doesn't offer sync
+        # convert-to at this time.
+        while [ ! -f "$pdf" ]
+        do
+            sleep 0.5s
+        done
+
+        # Convert to SVG
+        pdf2svg "$pdf" "$out" "$i"
 
         # Add white background
         xmlstarlet ed \
@@ -35,5 +46,6 @@ render() {
 }
 
 render biab 4
+render coverpage 1
 
 echo "==> Done" >&2
